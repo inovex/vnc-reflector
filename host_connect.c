@@ -232,7 +232,7 @@ static void rf_host_ver(void)
   char *buf = (char *)cur_slot->readbuf;
   int major = 3, minor = 3;
   int remote_major, remote_minor;
-  char ver_msg[12];
+  char ver_msg[16];
 
   if ( strncmp(buf, "RFB ", 4) != 0 || !isdigit(buf[4]) ||
        !isdigit(buf[4]) || !isdigit(buf[5]) || !isdigit(buf[6]) ||
